@@ -1,0 +1,52 @@
+{
+  "_comment": "合并规则的上游来源。build.py 会下载这些文件、转换为 Quantumult X 格式、去重后写入 rules/ 目录。新增来源只需在对应 sources 里加一行。",
+  "outputs": {
+    "rules/AdBlock.list": {
+      "title": "广告拦截合并规则",
+      "policy": "reject",
+      "sources": [
+        {"name": "fmz200 广告拦截合集", "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/filter.list"},
+        {"name": "blackmatrix7 AdvertisingLite", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AdvertisingLite/AdvertisingLite.list"},
+        {"name": "app2smile 哔哩哔哩广告", "url": "https://raw.githubusercontent.com/app2smile/rules/master/rule/bilibili-ad-qx.list"},
+        {"name": "app2smile 百度贴吧广告", "url": "https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad-qx.list"}
+      ]
+    },
+    "rules/AI.list": {
+      "title": "AI 服务合并规则 (ChatGPT / Claude / Gemini / Copilot 等)",
+      "policy": "AI",
+      "sources": [
+        {"name": "blackmatrix7 OpenAI", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list"},
+        {"name": "blackmatrix7 Claude", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Claude/Claude.list"},
+        {"name": "blackmatrix7 Gemini", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Gemini/Gemini.list"},
+        {"name": "blackmatrix7 BardAI", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BardAI/BardAI.list"},
+        {"name": "blackmatrix7 Copilot", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list"},
+        {"name": "fmz200 AI 分流合集", "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list"}
+      ]
+    },
+    "rules/Streaming.list": {
+      "title": "国际流媒体合并规则 (Disney+ / HBO / Prime Video / Spotify / Twitch 等)",
+      "policy": "Streaming",
+      "sources": [
+        {"name": "blackmatrix7 Disney", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list"},
+        {"name": "blackmatrix7 HBO", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/HBO/HBO.list"},
+        {"name": "blackmatrix7 PrimeVideo", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PrimeVideo/PrimeVideo.list"},
+        {"name": "blackmatrix7 Spotify", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list"},
+        {"name": "blackmatrix7 Twitch", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitch/Twitch.list"},
+        {"name": "blackmatrix7 Bahamut", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Bahamut/Bahamut.list"}
+      ]
+    },
+    "rules/Social.list": {
+      "title": "海外社交合并规则 (Twitter / Instagram / Facebook / Discord / Reddit / WhatsApp / Line)",
+      "policy": "Social",
+      "sources": [
+        {"name": "blackmatrix7 Twitter", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list"},
+        {"name": "blackmatrix7 Instagram", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Instagram/Instagram.list"},
+        {"name": "blackmatrix7 Facebook", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Facebook/Facebook.list"},
+        {"name": "blackmatrix7 Discord", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Discord/Discord.list"},
+        {"name": "blackmatrix7 Reddit", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Reddit/Reddit.list"},
+        {"name": "blackmatrix7 Whatsapp", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Whatsapp/Whatsapp.list"},
+        {"name": "blackmatrix7 Line", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Line/Line.list"}
+      ]
+    }
+  }
+}
