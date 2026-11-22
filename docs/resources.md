@@ -49,18 +49,13 @@
 - [KOP-XIAO 格式解析器](https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js)
 - [虎扑广告过滤测试版（上游标注 8.2.67 和 8.2.68）](https://raw.githubusercontent.com/akaagiao1/quantumult-x-scripts/main/hupu/hupu-ad.conf)
 
-## Spotify 独立分流与可选签到提醒
+## 主配置与上游对照
 
-仓库的 Streaming 规则已经覆盖 Spotify。需要不同出口时，在现有配置的 `[filter_remote]` 段中，将以下条目置于国际媒体合并规则之前，并把策略名改为自己的策略组。
+| 功能 | 主配置中的选择 | 原因 |
+| --- | --- | --- |
+| Telegram | 启用 blackmatrix7 独立分流，排在社交合并规则之前 | 核对时 blackmatrix7 有 40 条，Repcz 有 51 条。后者含共享分析域名 api.mixpanel.com，可能连其他 App 的分析请求也走电报策略。Repcz 保留为备选。 |
+| Spotify | 启用独立策略组，初始跟随国际媒体 | 可单独切换出口。已有 Streaming 合并订阅的用户可直接更新主配置，无需手工再加一份。 |
+| Apple Music | 可选，默认关闭 | 上游有 10 条细分规则。需要让音乐与其他 Apple 服务走不同出口时启用。[原始规则](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleMusic/AppleMusic.list) |
+| 每日签到提醒 | 本地时间 09:00，默认关闭 | 在任务列表启用并允许通知；提醒后自行前往 App 领取。脚本只调用本地通知。[任务脚本](../tasks/checkin-reminder.js) · [官方任务格式](https://github.com/crossutility/Quantumult-X/blob/master/gallery.json) |
 
-```ini
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=proxy, enabled=true
-```
-
-若只需每天提醒，可在现有 `[task_local]` 段加入下方条目，并设置 `enabled=true`。脚本仅发送本机通知，签到与领取在官方 App 或小程序内手动完成。
-
-```ini
-0 9 * * * https://raw.githubusercontent.com/blacksheep81/quanx/main/tasks/checkin-reminder.js, tag=每日签到提醒, enabled=false
-```
-
-定时语法参考 [Quantumult X 官方任务示例](https://github.com/crossutility/Quantumult-X/blob/master/gallery.json)。可在任务界面手动运行一次并确认系统允许通知。
+更新前备份当前个人配置。更新后可在请求记录中检查 Spotify 和 Telegram 的实际匹配策略。
