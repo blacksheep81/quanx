@@ -78,3 +78,7 @@
 [UI-Action 任务合集](https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/UI-Action.json) 可用于浏览作者的节点菜单。当前配置已经包含综合流媒体检测；需要针对单个服务排查时，可查看仓库 Scripts 下的 Netflix、YouTube 和 Disney 专项检测。导入合集时注意与现有任务重叠。
 
 [yfamily 资源入口](https://yfamilys.com/quantumultx) 提供配置、lite 配置和教程。初次配置设备时可以参考其[图文教程](https://yfamilys.com/qxmanual)，已有配置时逐项核对引用资源，整份导入前备份当前配置。网站上的软件价格和界面截图应以当前 App Store 与设备界面为准。
+
+## Netflix 定时切换
+
+主配置已加入每天本地时间 08:01 的 Netflix 检测与切换，默认关闭。任务参数绑定「🎬 Netflix」，脚本会检测候选出口并尝试改变该策略的选中项。更新配置后，先手动运行并查看任务日志，确认能识别你的节点后再启用定时执行。上游脚本地址携带 URL 编码的策略名，重命名策略组时也要同步修改任务参数。
