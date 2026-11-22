@@ -49,7 +49,9 @@ https://raw.githubusercontent.com/blacksheep81/quanx/main/QuantumultX.conf
 
 ## 重写（去广告与工具）
 
-默认**只打开一个**去广告大合集（fmz200，约 730 款 App）和微博去广告。几份去广告重写同时打开容易互相冲突，所以其余的单项方案（YouTube、哔哩哔哩、贴吧、知乎、高德、微信小程序）默认是关的，合集对某个 App 没效果时再单独打开。
+默认开启：fmz200 去广告合集（约 730 款 App）、微博&国际版、YouTube、哔哩哔哩、高德地图。
+
+我逐条比对过这些重写（详见 [docs/rewrite-compare.md](docs/rewrite-compare.md)）：fmz200 合集里**没有** YouTube、哔哩哔哩、高德的完整规则，这三份单项重写和合集是互补关系、没有冲突，所以一起开。贴吧（已被合集完全覆盖）、知乎（有 3 条与合集冲突）、微信小程序（2023 年后未更新）默认关闭。
 
 > YouTube 去广告需要禁用 QUIC，配置里已经加了 `udp_drop_list=443`。
 
