@@ -4,7 +4,7 @@
 
 - 每天由 GitHub Actions 自动：重新拉取上游规则 → 合并去重 → 检查所有链接 → 结果写入 [STATUS.md](STATUS.md)
 - 重写和脚本**直接引用原作者的链接**，作者更新你也跟着更新，不会因为复制而过时
-- 不包含会员破解、Cookie 获取 / 薅羊毛类脚本，也不含混淆过、来源不明的脚本
+- 不包含会员破解、薅羊毛类脚本，也不含混淆过、来源不明的脚本（唯一的 Cookie 获取是哔哩哔哩漫画签到，见下方“区域限制 & 签到”）
 
 ## 一键导入
 
@@ -56,6 +56,16 @@ https://raw.githubusercontent.com/blacksheep81/quanx/main/QuantumultX.conf
 > YouTube 去广告需要禁用 QUIC，配置里已经加了 `udp_drop_list=443`。
 
 工具：BoxJs、Sub-Store（订阅管理）、Script-Hub（把 Surge / Loon 模块转换成 QX 重写）。
+
+## 区域限制 & 签到
+
+- ✈️ TestFlight 区域限制解除（NobyDa）
+- 🎵 TikTok 解锁（Orz-3）
+- 📚 哔哩哔哩漫画 Cookie（NobyDa）：打开哔哩哔哩漫画 App 获取 Cookie，配合每日签到任务使用
+
+## 证书吊销检查（OCSP）
+
+`[filter_local]` 里屏蔽了苹果和 DigiCert / Entrust 的 OCSP、CRL 域名，用来防止自签或侧载的 App 因证书被吊销而闪退。代价是 iOS 无法再检查证书有没有被吊销。不需要的话，删掉配置里这一段就行。
 
 ## 节点页脚本
 
