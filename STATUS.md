@@ -1,8 +1,8 @@
 # 链接健康状态
 
-最近检查：2026-11-22 17:21:03 (UTC+8)
+最近检查：2026-11-22 17:41:45 (UTC+8)
 
-配置文件引用的远程资源：**60** 个，可用 **60** 个，失效 **0** 个。
+配置文件引用的远程资源：**62** 个，可用 **62** 个，失效 **0** 个。
 
 ## 合并规则
 
@@ -78,10 +78,12 @@
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
 - ✅ https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/filterFix.list
+- ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list
+- ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list
+- ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleMusic/AppleMusic.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list
-- ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list
