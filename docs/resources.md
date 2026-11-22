@@ -70,3 +70,11 @@
 | PC 游戏限免 | 18:00 | 首次运行提示当前活动，以后只提示新出现的活动。通知最多展示三个标题，点击可查看完整列表。 |
 
 限免活动由 [GamerPower 公开 API](https://www.gamerpower.com/api-read) 提供。任务仅查询 PC 游戏，在本机保存已提醒的活动编号，领取条件以商店页面为准。
+
+## KOP-XIAO 与 yfamily 教程
+
+[KOP-XIAO/QuantumultX](https://github.com/KOP-XIAO/QuantumultX) 的工具在主配置中已有六处接入：资源解析器、IP 归属信息、流媒体检测、Google 出口检测、节点信息、策略流量查询。长按节点即可运行交互任务。
+
+[UI-Action 任务合集](https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/UI-Action.json) 可用于浏览作者的节点菜单。当前配置已经包含综合流媒体检测；需要针对单个服务排查时，可查看仓库 Scripts 下的 Netflix、YouTube 和 Disney 专项检测。导入合集时注意与现有任务重叠。
+
+[yfamily 资源入口](https://yfamilys.com/quantumultx) 提供配置、lite 配置和教程。初次配置设备时可以参考其[图文教程](https://yfamilys.com/qxmanual)，已有配置时逐项核对引用资源，整份导入前备份当前配置。网站上的软件价格和界面截图应以当前 App Store 与设备界面为准。
