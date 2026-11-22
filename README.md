@@ -1,5 +1,7 @@
 # Quantumult X 合并配置
 
+[35 项资源索引、Spotify 分流与可选签到提醒](docs/resources.md)
+
 把 GitHub 上**目前仍在维护、确认可用**的 Quantumult X 规则、重写和脚本合到一份配置里，一键导入。
 
 - 每天由 GitHub Actions 自动：重新拉取上游规则 → 合并去重 → 检查所有链接 → 结果写入 [STATUS.md](STATUS.md)
