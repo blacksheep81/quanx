@@ -59,3 +59,14 @@
 | 每日签到提醒 | 本地时间 09:00，默认关闭 | 在任务列表启用并允许通知；提醒后自行前往 App 领取。脚本只调用本地通知。[任务脚本](../tasks/checkin-reminder.js) · [官方任务格式](https://github.com/crossutility/Quantumult-X/blob/master/gallery.json) |
 
 更新前备份当前个人配置。更新后可在请求记录中检查 Spotify 和 Telegram 的实际匹配策略。
+
+## 游戏福利任务
+
+在 Quantumult X 的任务列表里按需开启，时间按设备本地时区执行。
+
+| 任务 | 时间 | 行为 |
+| --- | --- | --- |
+| 每日签到提醒 | 09:00 | 提醒打开小黑盒，在 App 内完成签到并核对奖励。 |
+| PC 游戏限免 | 18:00 | 首次运行提示当前活动，以后只提示新出现的活动。通知最多展示三个标题，点击可查看完整列表。 |
+
+限免活动由 [GamerPower 公开 API](https://www.gamerpower.com/api-read) 提供。任务仅查询 PC 游戏，在本机保存已提醒的活动编号，领取条件以商店页面为准。
