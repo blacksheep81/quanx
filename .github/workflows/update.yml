@@ -8,14 +8,16 @@ on:
     paths:
       - QuantumultX.conf
       - scripts/**
-
-permissions:
-  contents: write
+      - tasks/**
+      - .github/workflows/update.yml
 
 # 避免定时任务和 push 触发同时运行导致 git push 冲突
 concurrency:
-  group: update-rules
+  group: quanx-update
   cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -30,6 +32,7 @@ jobs:
         continue-on-error: true   # 先把 STATUS.md 提交上去，最后一步再报错
         run: python3 scripts/build.py
       - name: 提交更新
+        if: success() || failure()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

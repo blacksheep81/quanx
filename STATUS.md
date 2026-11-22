@@ -1,8 +1,8 @@
 # 链接健康状态
 
-最近检查：2026-11-22 18:06:57 (UTC+8)
+最近检查：2026-11-22 18:12:18 (UTC+8)
 
-配置文件引用的远程资源：**63** 个，可用 **63** 个，失效 **0** 个。
+配置文件引用的远程资源：**64** 个，可用 **64** 个，失效 **0** 个。
 
 ## 合并规则
 
@@ -107,6 +107,7 @@
 - ✅ https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf
 - ✅ https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet
 - ✅ https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.qx.conf
+- ✅ https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/switch-check-nf.js
 - ✅ https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js
 - ✅ https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/switch-check-google.js
 - ✅ https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/server-info-plus.js

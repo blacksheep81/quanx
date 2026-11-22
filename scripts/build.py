@@ -20,6 +20,7 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 CONF = ROOT / "QuantumultX.conf"
@@ -181,6 +182,21 @@ def check_links(urls: list[str]) -> list[tuple[str, int]]:
     return list(zip(urls, codes))
 
 
+def missing_local_resources() -> list[str]:
+    urls = re.findall(r"https?://[^\s,]+", CONF.read_text("utf-8"))
+    missing = []
+    for url in urls:
+        if not url.startswith(SELF_PREFIX):
+            continue
+        path = unquote(urlsplit(url).path).split("/", 4)
+        if len(path) != 5 or path[3] != "main":
+            continue
+        target = (ROOT / path[4]).resolve()
+        if not target.is_relative_to(ROOT) or not target.is_file():
+            missing.append(path[4])
+    return sorted(set(missing))
+
+
 def main() -> int:
     only_check = "--check" in sys.argv
     tz = dt.timezone(dt.timedelta(hours=8))
@@ -191,11 +207,14 @@ def main() -> int:
         for path, out in spec["outputs"].items():
             reports.append(build_output(path, out, now))
 
+    missing = missing_local_resources()
     links = check_links(conf_urls())
     bad = [(u, c) for u, c in links if c != 200]
 
     lines = [f"# 链接健康状态\n", f"最近检查：{now}\n",
              f"配置文件引用的远程资源：**{len(links)}** 个，可用 **{len(links) - len(bad)}** 个，失效 **{len(bad)}** 个。\n"]
+    if missing:
+        lines += ["## 缺失的仓库资源\n", *[f"- {path}" for path in missing], ""]
     if bad:
         lines.append("## ❌ 失效链接\n")
         lines += [f"- `{c or '超时'}` {u}" for u, c in bad]
@@ -222,7 +241,7 @@ def main() -> int:
         print(f"  BROKEN {c} {u}")
     for r in reports:
         print(f"{r['path']}: {r['total']} rules, ok={r['ok']}, written={r.get('written', False)}")
-    return 1 if bad or not all(r["ok"] for r in reports) else 0
+    return int(bool(bad or missing or any(not r["ok"] for r in reports)))
 
 
 if __name__ == "__main__":
