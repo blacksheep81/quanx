@@ -8,9 +8,17 @@ async function checkGames() {
   if (res.statusCode !== 200) throw new Error("HTTP " + res.statusCode);
   const games = JSON.parse(res.body);
   if (!Array.isArray(games)) throw new Error("Unexpected response");
-  const known = JSON.parse($prefs.valueForKey(storageKey) || "[]");
+  const stored = $prefs.valueForKey(storageKey);
+  const valid = games.filter(game => Number.isInteger(game.id) && typeof game.title === "string");
+  // 第一次运行只记录当前限免列表，不一次性推送全部
+  if (!stored) {
+    $prefs.setValueForKey(JSON.stringify(valid.map(game => game.id).slice(0, 1000)), storageKey);
+    console.log("GamerPower: 首次运行，已记录 " + valid.length + " 项，之后只通知新增限免");
+    return;
+  }
+  const known = JSON.parse(stored);
   const seen = new Set(known);
-  const fresh = games.filter(game => Number.isInteger(game.id) && typeof game.title === "string" && !seen.has(game.id));
+  const fresh = valid.filter(game => !seen.has(game.id));
   if (!fresh.length) return;
   $notify("PC 游戏限免 · GamerPower", fresh.length + " 项可查看", fresh.slice(0, 3).map(game => game.title).join(" · "), {"open-url": "https://www.gamerpower.com/giveaways/pc"});
   const ids = [...new Set([...fresh.map(game => game.id), ...known])].slice(0, 1000);

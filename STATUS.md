@@ -1,12 +1,12 @@
 # 链接健康状态
 
-最近检查：2026-11-22 17:44:13 (UTC+8)
+最近检查：2026-11-22 18:06:09 (UTC+8)
 
-配置文件引用的远程资源：**62** 个，可用 **62** 个，失效 **0** 个。
+配置文件引用的远程资源：**63** 个，可用 **63** 个，失效 **0** 个。
 
 ## 合并规则
 
-### `rules/AdBlock.list` ✅ — 共 38987 条
+### `rules/AdBlock.list` ✅ — 共 38251 条（另去除 736 条被 host-suffix 覆盖的冗余规则）
 
 | 来源 | 状态 | 规则数 | 新增(去重后) | 跳过 |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@
 | [app2smile 哔哩哔哩广告](https://raw.githubusercontent.com/app2smile/rules/master/rule/bilibili-ad-qx.list) | ✅ | 1 | 1 | 0 |
 | [app2smile 百度贴吧广告](https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad-qx.list) | ✅ | 1 | 0 | 0 |
 
-### `rules/AI.list` ✅ — 共 121 条
+### `rules/AI.list` ✅ — 共 107 条（另去除 14 条被 host-suffix 覆盖的冗余规则）
 
 | 来源 | 状态 | 规则数 | 新增(去重后) | 跳过 |
 |---|---|---|---|---|
@@ -26,18 +26,17 @@
 | [blackmatrix7 Copilot](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list) | ✅ | 51 | 20 | 0 |
 | [fmz200 AI 分流合集](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list) | ✅ | 64 | 49 | 2 |
 
-### `rules/Streaming.list` ✅ — 共 299 条
+### `rules/Streaming.list` ✅ — 共 268 条（另去除 1 条被 host-suffix 覆盖的冗余规则）
 
 | 来源 | 状态 | 规则数 | 新增(去重后) | 跳过 |
 |---|---|---|---|---|
 | [blackmatrix7 Disney](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list) | ✅ | 174 | 174 | 0 |
 | [blackmatrix7 HBO](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/HBO/HBO.list) | ✅ | 49 | 48 | 0 |
 | [blackmatrix7 PrimeVideo](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PrimeVideo/PrimeVideo.list) | ✅ | 18 | 18 | 0 |
-| [blackmatrix7 Spotify](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list) | ✅ | 30 | 30 | 0 |
 | [blackmatrix7 Twitch](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitch/Twitch.list) | ✅ | 21 | 21 | 0 |
 | [blackmatrix7 Bahamut](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Bahamut/Bahamut.list) | ✅ | 8 | 8 | 0 |
 
-### `rules/Social.list` ✅ — 共 678 条
+### `rules/Social.list` ✅ — 共 677 条（另去除 1 条被 host-suffix 覆盖的冗余规则）
 
 | 来源 | 状态 | 规则数 | 新增(去重后) | 跳过 |
 |---|---|---|---|---|
@@ -57,6 +56,7 @@
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+- ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
 - ✅ https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png

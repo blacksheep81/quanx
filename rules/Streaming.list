@@ -1,30 +1,22 @@
-# NAME: 国际流媒体合并规则 (Disney+ / HBO / Prime Video / Spotify / Twitch 等)
-# UPDATED: 2026-11-22 15:29:16 (UTC+8)
-# TOTAL: 299
+# NAME: 国际流媒体合并规则 (Disney+ / HBO / Prime Video / Twitch / 巴哈姆特)
+# UPDATED: 2026-11-22 18:06:09 (UTC+8)
+# TOTAL: 268
 # 本文件由 scripts/build.py 自动合并生成，请勿手动修改。来源：
 #   - blackmatrix7 Disney: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list
 #   - blackmatrix7 HBO: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/HBO/HBO.list
 #   - blackmatrix7 PrimeVideo: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PrimeVideo/PrimeVideo.list
-#   - blackmatrix7 Spotify: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list
 #   - blackmatrix7 Twitch: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitch/Twitch.list
 #   - blackmatrix7 Bahamut: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Bahamut/Bahamut.list
 
 host, atv-ps.amazon.com, Streaming
-host, audio4-ak-spotify-com.akamaized.net, Streaming
 host, avodmp4s3ww-a.akamaihd.net, Streaming
 host, bahamut.akamaized.net, Streaming
-host, cdn-spotify-experiments.conductrics.com, Streaming
-host, cdn.registerdisney.go.com, Streaming
 host, d1v5ir2lpwr8os.cloudfront.net, Streaming
 host, d22qjgkvxw22r6.cloudfront.net, Streaming
 host, d25xi40x97liuc.cloudfront.net, Streaming
 host, d27xxe7juh1us6.cloudfront.net, Streaming
 host, dmqdd6hw24ucf.cloudfront.net, Streaming
 host, fls-na.amazon.com, Streaming
-host, heads-ak-spotify-com.akamaized.net, Streaming
-host, spotify.com.edgesuite.net, Streaming
-host, spotify.map.fastly.net, Streaming
-host, spotify.map.fastlylb.net, Streaming
 host, www.amazon.com, Streaming
 host-suffix, 20thcenturystudios.com.au, Streaming
 host-suffix, 20thcenturystudios.com.br, Streaming
@@ -38,7 +30,6 @@ host-suffix, adventuresbydisney.com, Streaming
 host-suffix, aiv-cdn.net, Streaming
 host-suffix, aiv-delivery.net, Streaming
 host-suffix, amazonvideo.com, Streaming
-host-suffix, audio-ak-spotify-com.akamaized.net, Streaming
 host-suffix, babble.com, Streaming
 host-suffix, babyzone.com, Streaming
 host-suffix, bahamut.com.tw, Streaming
@@ -47,7 +38,6 @@ host-suffix, bamgrid.com, Streaming
 host-suffix, bcbolthboa-a.akamaihd.net, Streaming
 host-suffix, beautyandthebeastmusical.co.uk, Streaming
 host-suffix, braze.com, Streaming
-host-suffix, byspotify.com, Streaming
 host-suffix, cdn.optimizely.com, Streaming
 host-suffix, cf-images.ap-southeast-1.prod.boltdns.net, Streaming
 host-suffix, cinemax.com, Streaming
@@ -201,7 +191,6 @@ host-suffix, hbomaxcdn.com, Streaming
 host-suffix, hbomaxdash.s.llnwi.net, Streaming
 host-suffix, hbonow.com, Streaming
 host-suffix, hbounify-prod.evergent.com, Streaming
-host-suffix, heads4-ak-spotify-com.akamaized.net, Streaming
 host-suffix, hinet.net, Streaming
 host-suffix, hotstar-cdn.net, Streaming
 host-suffix, hotstar-labs.com, Streaming
@@ -240,27 +229,11 @@ host-suffix, nowe.hk, Streaming
 host-suffix, players.brightcove.net, Streaming
 host-suffix, playmation.com, Streaming
 host-suffix, primevideo.com, Streaming
-host-suffix, pscdn.co, Streaming
 host-suffix, pv-cdn.net, Streaming
-host-suffix, scdn.co, Streaming
 host-suffix, shopdisney.com, Streaming
 host-suffix, shops-disney.com, Streaming
 host-suffix, sorcerersarena.com, Streaming
 host-suffix, spaindisney.com, Streaming
-host-suffix, spoti.fi, Streaming
-host-suffix, spotify-com.akamaized.net, Streaming
-host-suffix, spotify-everywhere.com, Streaming
-host-suffix, spotify.app.link, Streaming
-host-suffix, spotify.com, Streaming
-host-suffix, spotify.design, Streaming
-host-suffix, spotifycdn.com, Streaming
-host-suffix, spotifycdn.net, Streaming
-host-suffix, spotifycharts.com, Streaming
-host-suffix, spotifycodes.com, Streaming
-host-suffix, spotifyforbrands.com, Streaming
-host-suffix, spotifyjobs.com, Streaming
-host-suffix, spotifynewsroom.jp, Streaming
-host-suffix, spotilocal.com, Streaming
 host-suffix, star-brasil.com, Streaming
 host-suffix, star-latam.com, Streaming
 host-suffix, starott.com, Streaming
@@ -273,7 +246,6 @@ host-suffix, themarvelexperiencetour.com, Streaming
 host-suffix, thestationbymaker.com, Streaming
 host-suffix, thewaltdisneycompany.com, Streaming
 host-suffix, thisispolaris.com, Streaming
-host-suffix, tospotify.com, Streaming
 host-suffix, ttvnw.net, Streaming
 host-suffix, twitch-ext.rootonline.de, Streaming
 host-suffix, twitch.tv, Streaming
@@ -285,7 +257,6 @@ host-suffix, watchdisneyfe.com, Streaming
 host-suffix, watchespn.com, Streaming
 host-suffix, youboranqs01.com, Streaming
 host-keyword, avoddashs, Streaming
-host-keyword, spotify, Streaming
 host-keyword, ttvnw, Streaming
 user-agent, Anime*, Streaming
 user-agent, Disney+*, Streaming
@@ -293,15 +264,12 @@ user-agent, HBO%20NOW*, Streaming
 user-agent, HBOMAX*, Streaming
 user-agent, InstantVideo.US*, Streaming
 user-agent, Prime%20Video*, Streaming
-user-agent, Spotify*, Streaming
 ip-cidr, 103.53.48.0/23, Streaming
-ip-cidr, 104.154.127.126/32, Streaming
 ip-cidr, 185.42.204.0/22, Streaming
 ip-cidr, 192.108.239.0/24, Streaming
 ip-cidr, 192.16.64.0/21, Streaming
 ip-cidr, 199.9.248.0/21, Streaming
 ip-cidr, 23.160.0.0/24, Streaming
-ip-cidr, 35.186.224.47/32, Streaming
 ip-cidr, 45.113.128.0/22, Streaming
 ip-cidr, 52.223.192.0/20, Streaming
 ip-cidr, 52.223.208.0/21, Streaming
