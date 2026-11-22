@@ -1,8 +1,8 @@
 # 链接健康状态
 
-最近检查：2026-11-22 16:58:45 (UTC+8)
+最近检查：2026-11-22 17:21:03 (UTC+8)
 
-配置文件引用的远程资源：**57** 个，可用 **57** 个，失效 **0** 个。
+配置文件引用的远程资源：**60** 个，可用 **60** 个，失效 **0** 个。
 
 ## 合并规则
 
@@ -99,6 +99,9 @@
 - ✅ https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet
 - ✅ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Applet.conf
+- ✅ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf
+- ✅ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf
+- ✅ https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
 - ✅ https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf
 - ✅ https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet
 - ✅ https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.qx.conf
