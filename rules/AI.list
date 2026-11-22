@@ -1,6 +1,6 @@
 # NAME: AI 服务合并规则 (ChatGPT / Claude / Gemini / Copilot 等)
-# UPDATED: 2026-11-22 15:29:16 (UTC+8)
-# TOTAL: 121
+# UPDATED: 2026-11-22 18:06:09 (UTC+8)
+# TOTAL: 107
 # 本文件由 scripts/build.py 自动合并生成，请勿手动修改。来源：
 #   - blackmatrix7 OpenAI: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
 #   - blackmatrix7 Claude: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Claude/Claude.list
@@ -14,29 +14,17 @@ host, aida.googleapis.com, AI
 host, aistudio.google.com, AI
 host, alkalicore-pa.clients6.google.com, AI
 host, alkalimakersuite-pa.clients6.google.com, AI
-host, api.githubcopilot.com, AI
 host, api.msn.com, AI
-host, api.statsig.com, AI
-host, api.x.ai, AI
 host, assets.msn.com, AI
-host, bard.google.com, AI
 host, browser-intake-datadoghq.com, AI
 host, cdn.usefathom.com, AI
-host, chat.mistral.ai, AI
 host, chat.openai.com.cdn.cloudflare.net, AI
-host, chatgpt.livekit.cloud, AI
-host, console.mistral.ai, AI
 host, copilot-proxy.githubusercontent.com, AI
 host, copilot.microsoft.com, AI
-host, deepmind.com, AI
-host, deepmind.google, AI
 host, gateway.bingviz.microsoft.net, AI
 host, gateway.bingviz.microsoftapp.net, AI
 host, geller-pa.googleapis.com, AI
-host, gemini.google.com, AI
-host, generativeai.google, AI
 host, generativelanguage.googleapis.com, AI
-host, host.livekit.cloud, AI
 host, imagine.meta.com, AI
 host, in.appcenter.ms, AI
 host, location.microsoft.com, AI
@@ -44,10 +32,8 @@ host, makersuite.google.com, AI
 host, odc.officeapps.live.com, AI
 host, openai-api.arkoselabs.com, AI
 host, openai.com.cdn.cloudflare.net, AI
-host, openaiapi-site.azureedge.net, AI
 host, openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net, AI
 host, openaicomproductionae4b.blob.core.windows.net, AI
-host, proactivebackend-pa.googleapis.com, AI
 host, production-openaicom-storage.azureedge.net, AI
 host, r.bing.com, AI
 host, self.events.data.microsoft.com, AI

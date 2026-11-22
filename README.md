@@ -25,21 +25,24 @@ https://raw.githubusercontent.com/blacksheep81/quanx/main/QuantumultX.conf
 | 路径 | 说明 |
 |---|---|
 | `QuantumultX.conf` | 主配置（一键导入用这个） |
-| `rules/AdBlock.list` | 广告拦截合并规则（约 3.9 万条，fmz200 + blackmatrix7 AdvertisingLite + app2smile） |
+| `rules/AdBlock.list` | 广告拦截合并规则（约 3.8 万条，已去除冗余，fmz200 + blackmatrix7 AdvertisingLite + app2smile） |
 | `rules/AI.list` | AI 合并规则：ChatGPT、Claude、Gemini、Copilot 等 |
-| `rules/Streaming.list` | 国际流媒体合并规则：Disney+、HBO、Prime Video、Spotify、Twitch、巴哈姆特 |
+| `rules/Streaming.list` | 国际流媒体合并规则：Disney+、HBO、Prime Video、Twitch、巴哈姆特（Spotify 走独立的 🎧 Spotify 分组） |
 | `rules/Social.list` | 海外社交合并规则：Twitter/X、Instagram、Facebook、Discord、Reddit、WhatsApp、Line |
 | `scripts/sources.json` | 合并规则用到的上游来源，想加来源就在这里加一行 |
 | `scripts/build.py` | 合并 + 链接检查脚本（只用 Python 标准库） |
 | `STATUS.md` | 自动生成的链接健康报告 |
+| `tasks/` | 本仓库的定时任务脚本：PC 游戏限免追踪、签到提醒（默认关闭） |
+| `docs/` | 资源索引、重写比对记录 |
 
 ## 策略组
 
 | 策略组 | 默认 | 说明 |
 |---|---|---|
-| 🚀 节点选择 | ♻️ 自动选择 | 总出口 |
+| 🚀 节点选择 | ♻️ 自动选择 | 总出口。自动选择会排除“剩余流量 / 到期时间”等信息节点和回国节点 |
 | 🤖 AI 服务 | 🇺🇸 美国节点 | OpenAI / Claude 不支持香港节点，所以列表里没有香港 |
 | 📺 YouTube / 🎬 Netflix / 🌍 国际媒体 | 🚀 节点选择 | |
+| 🎧 Spotify | 🌍 国际媒体 | 可单独切换出口 |
 | 🎵 TikTok | 🇯🇵 日本节点 | |
 | 📲 电报 / 💬 海外社交 / 🔍 谷歌 / 🐙 GitHub | 🚀 节点选择 | |
 | Ⓜ️ 微软 / 🍎 苹果 | direct | |
@@ -63,11 +66,11 @@ https://raw.githubusercontent.com/blacksheep81/quanx/main/QuantumultX.conf
 
 - ✈️ TestFlight 区域限制解除（NobyDa）
 - 🎵 TikTok 解锁（Orz-3）
-- 📚 哔哩哔哩漫画 Cookie（NobyDa）：打开哔哩哔哩漫画 App 获取 Cookie，配合每日签到任务使用
+- 📚 哔哩哔哩漫画签到（NobyDa）：先打开一次哔哩哔哩漫画 App 获取 Cookie，之后每天 9:05 由 `[task_local]` 里的定时任务自动签到
 
 ## 证书吊销检查（OCSP）
 
-`[filter_local]` 里屏蔽了苹果和 DigiCert / Entrust 的 OCSP、CRL 域名，用来防止自签或侧载的 App 因证书被吊销而闪退。代价是 iOS 无法再检查证书有没有被吊销。不需要的话，删掉配置里这一段就行。
+`[filter_local]` 里预置了屏蔽苹果和 DigiCert / Entrust 的 OCSP、CRL 域名的规则，**默认关闭**。只有自签或侧载的 App 因证书被吊销而闪退时才需要：把那一段每行开头的 `;` 去掉即可。代价是 iOS 无法再检查证书有没有被吊销，会降低安全性。
 
 ## 节点页脚本
 
@@ -79,6 +82,8 @@ https://raw.githubusercontent.com/blacksheep81/quanx/main/QuantumultX.conf
 python3 scripts/build.py          # 合并规则 + 检查链接
 python3 scripts/build.py --check  # 只检查链接
 ```
+
+有链接失效、上游失效或规则数骤减一半以上时，脚本退出码为 1，GitHub Actions 会显示失败；此时不会覆盖旧规则文件。
 
 ## 来源与致谢
 

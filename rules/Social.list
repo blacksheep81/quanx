@@ -1,6 +1,6 @@
 # NAME: 海外社交合并规则 (Twitter / Instagram / Facebook / Discord / Reddit / WhatsApp / Line)
-# UPDATED: 2026-11-22 15:29:16 (UTC+8)
-# TOTAL: 678
+# UPDATED: 2026-11-22 18:06:09 (UTC+8)
+# TOTAL: 677
 # 本文件由 scripts/build.py 自动合并生成，请勿手动修改。来源：
 #   - blackmatrix7 Twitter: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list
 #   - blackmatrix7 Instagram: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Instagram/Instagram.list
@@ -10,7 +10,6 @@
 #   - blackmatrix7 Whatsapp: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Whatsapp/Whatsapp.list
 #   - blackmatrix7 Line: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Line/Line.list
 
-host, graph.facebook.com, Social
 host-suffix, aboutfacebook.com, Social
 host-suffix, accessfacebookfromschool.com, Social
 host-suffix, accountkit.com, Social

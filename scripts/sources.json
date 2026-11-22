@@ -24,13 +24,12 @@
       ]
     },
     "rules/Streaming.list": {
-      "title": "国际流媒体合并规则 (Disney+ / HBO / Prime Video / Spotify / Twitch 等)",
+      "title": "国际流媒体合并规则 (Disney+ / HBO / Prime Video / Twitch / 巴哈姆特)",
       "policy": "Streaming",
       "sources": [
         {"name": "blackmatrix7 Disney", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list"},
         {"name": "blackmatrix7 HBO", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/HBO/HBO.list"},
         {"name": "blackmatrix7 PrimeVideo", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PrimeVideo/PrimeVideo.list"},
-        {"name": "blackmatrix7 Spotify", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list"},
         {"name": "blackmatrix7 Twitch", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitch/Twitch.list"},
         {"name": "blackmatrix7 Bahamut", "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Bahamut/Bahamut.list"}
       ]
