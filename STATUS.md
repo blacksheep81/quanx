@@ -1,8 +1,8 @@
 # 链接健康状态
 
-最近检查：2026-11-24 12:46:37 (UTC+8)
+最近检查：2026-11-24 19:22:55 (UTC+8)
 
-配置文件引用的远程资源：**64** 个，可用 **64** 个，失效 **0** 个。
+配置文件引用的远程资源：**66** 个，可用 **66** 个，失效 **0** 个。
 
 ## 合并规则
 
@@ -93,6 +93,8 @@
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list
 - ✅ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Lan/Lan.list
+- ✅ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf
+- ✅ https://raw.githubusercontent.com/deezertidal/QuantumultX-Rewrite/master/rewrite/htjzb.conf
 - ✅ https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/rewrite.snippet
 - ✅ https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/weibo.snippet
 - ✅ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf
