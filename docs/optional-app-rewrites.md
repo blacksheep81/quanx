@@ -1,5 +1,19 @@
 # 应用功能重写核对记录
 
+## 追加项目（2026-11-24）
+
+以下五项已加入主配置，均为 `enabled=false`。仅核对配置与底层源码可读取，未实测新版 App；按需单项开启，异常时关闭。
+
+| 项目 | 原始来源 | 已知范围和限制 |
+| --- | --- | --- |
+| Picsart | [配置](https://github.com/Marol62926/Quantumultx/blob/main/picsart.conf) · [脚本](https://github.com/Marol62926/MarScrpt/blob/main/picsart.js) | 配置标注测试版本 24.9.1；修改购买状态及 premium_tools_standard 权限，不能据此确认云端 AI 功能可用。 |
+| Smallpdf | [配置](https://github.com/deezertidal/QuantumultX-Rewrite/blob/master/rewrite/smallpdf.conf) · [脚本](https://github.com/Marol62926/MarScrpt/blob/main/smallpdf.js) | 替换整个账户响应，可能改变账户信息显示；不代表服务端订阅或网页版权限。 |
+| Alarmy | [配置](https://github.com/deezertidal/QuantumultX-Rewrite/blob/master/rewrite/alarmy.conf) · [脚本](https://github.com/Marol62926/MarScrpt/blob/main/alarmy.js) | 修改订阅数组，实际效果取决于 App 版本。 |
+| 百度网盘 | [脚本](https://github.com/NobyDa/Script/blob/master/Surge/JS/BaiduCloud.js) | 在线视频倍速/清晰度用途，不提供下载加速或容量。本仓库提供窄域名 QX 包装。 |
+| MIX | [脚本](https://github.com/NobyDa/Script/blob/master/Surge/JS/MIX.js) | 上游要求恢复购买；合集与脚本注释域名不同，本仓库包装兼容 bmall 与 cdn-bm 两个明确主机。 |
+
+Bazaart 未接入：规则作用于多个 App 共用的 buy.itunes.apple.com/verifyReceipt，容易冲突。一木记账未接入：配置引用的底层脚本读取失败。
+
 2026-11-24 核对。链接和源码可读取不代表当前 App 实测有效。节点订阅、Token 和个人证书不写入仓库。
 
 | 项目 | 接入情况 | 限制与来源 |
