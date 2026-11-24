@@ -2,7 +2,9 @@
 
 [35 项资源索引、Spotify 分流与可选签到提醒](docs/resources.md)
 
-把 GitHub 上**目前仍在维护、确认可用**的 Quantumult X 规则、重写和脚本合到一份配置里，一键导入。
+[CamScanner、Spotify 与其他可选应用重写的范围及核对结果](docs/optional-app-rewrites.md)
+
+把 GitHub 上的 Quantumult X 规则、重写和脚本合到一份配置里，一键导入。链接检查不等同于 App 实测，版本限制见各项说明。
 
 - 每天由 GitHub Actions 自动：重新拉取上游规则 → 合并去重 → 检查所有链接 → 结果写入 [STATUS.md](STATUS.md)
 - 重写和脚本**直接引用原作者的链接**，作者更新你也跟着更新，不会因为复制而过时
