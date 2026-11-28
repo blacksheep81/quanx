@@ -1,6 +1,6 @@
 # 链接健康状态
 
-最近检查：2026-11-27 10:50:50 (UTC+8)
+最近检查：2026-11-28 10:40:18 (UTC+8)
 
 配置文件引用的远程资源：**69** 个，可用 **69** 个，失效 **0** 个。
 
@@ -15,7 +15,7 @@
 | [app2smile 哔哩哔哩广告](https://raw.githubusercontent.com/app2smile/rules/master/rule/bilibili-ad-qx.list) | ✅ | 1 | 1 | 0 |
 | [app2smile 百度贴吧广告](https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad-qx.list) | ✅ | 1 | 0 | 0 |
 
-### `rules/AI.list` ✅ — 共 107 条（另去除 14 条被 host-suffix 覆盖的冗余规则）
+### `rules/AI.list` ✅ — 共 166 条（另去除 16 条被 host-suffix 覆盖的冗余规则）
 
 | 来源 | 状态 | 规则数 | 新增(去重后) | 跳过 |
 |---|---|---|---|---|
@@ -24,7 +24,7 @@
 | [blackmatrix7 Gemini](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Gemini/Gemini.list) | ✅ | 13 | 13 | 0 |
 | [blackmatrix7 BardAI](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BardAI/BardAI.list) | ✅ | 10 | 1 | 0 |
 | [blackmatrix7 Copilot](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list) | ✅ | 51 | 20 | 0 |
-| [fmz200 AI 分流合集](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list) | ✅ | 64 | 49 | 2 |
+| [fmz200 AI 分流合集](https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list) | ✅ | 126 | 110 | 2 |
 
 ### `rules/Streaming.list` ✅ — 共 268 条（另去除 1 条被 host-suffix 覆盖的冗余规则）
 
